@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад занять</title>
+</head>
+<body>
+
+    <h1>Розклад занять</h1>
+
+    <table border="1">
+
+        <caption>Розклад занять</caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2">День тижня</th>
+                <th colspan="4">Інформація про заняття</th>
+            </tr>
+
+            <tr>
+                <th>Номер пари</th>
+                <th>Час</th>
+                <th>Предмет</th>
+                <th>Кабінет</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td rowspan="3">Понеділок</td>
+                <td>1</td>
+                <td>08:30 - 09:50</td>
+                <td>Математика</td>
+                <td>205</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>10:00 - 11:20</td>
+                <td>Інформатика</td>
+                <td>310</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>11:30 - 12:50</td>
+                <td>Англійська мова</td>
+                <td>207</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>1</td>
+                <td>08:30 - 09:50</td>
+                <td>Українська мова</td>
+                <td>105</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>10:00 - 11:20</td>
+                <td>Історія</td>
+                <td>204</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="5">Всього занять: 5</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
