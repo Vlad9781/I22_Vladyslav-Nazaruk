@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>Курс HTML для початківців</h1>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="lessons.html">Уроки</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Про курс</h2>
+
+            <img
+                src="students.jpg"
+                alt="Студенти навчаються створювати вебсторінки"
+            >
+
+            <p>
+                На курсі ви навчитеся створювати вебсторінки.
+            </p>
+        </section>
+
+        <section>
+            <h2>Реєстрація</h2>
+
+            <form>
+
+                <label for="name">Ім'я:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                >
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                >
+
+                <br><br>
+
+                <button type="submit">
+                    Зареєструватися
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!--
+    Виправлені проблеми:
+    1. Додано lang="uk" для визначення мови документа.
+    2. Головний заголовок змінено з h2 на h1.
+    3. Підзаголовки змінено з h4 на h2.
+    4. Навігацію поміщено в семантичний тег nav.
+    5. Незрозумілі тексти посилань замінено на "Уроки" та "Контакти".
+    6. Для зображення додано атрибут alt.
+    7. Для полів форми додано label, for та id.
+    8. Для email використано type="email".
+    9. Основний вміст поміщено в тег main.
+    -->
+
+</body>
+</html>
