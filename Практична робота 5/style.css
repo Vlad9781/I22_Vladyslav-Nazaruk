@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    border-bottom: 2px solid black;
+    padding: 15px;
+}
+
+#main-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+.important {
+    border: 2px solid black;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 400px;
+}
