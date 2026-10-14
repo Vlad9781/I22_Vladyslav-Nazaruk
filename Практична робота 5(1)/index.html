@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Інтернет-магазин Tech Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="home">
+    <h1>Tech Store</h1>
+    <p>Інтернет-магазин техніки</p>
+  </header>
+
+  <nav class="menu">
+    <a href="#home">Головна</a>
+    <a href="#products">Товари</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+
+  <main>
+    <section id="products">
+      <h2>Популярні товари</h2>
+
+      <article class="product">
+        <span class="discount">-20%</span>
+        <h3>Ноутбук</h3>
+        <p>Ноутбук для навчання та роботи.</p>
+        <p class="price">25 000 грн</p>
+      </article>
+
+      <article class="product">
+        <span class="discount">-15%</span>
+        <h3>Смартфон</h3>
+        <p>Потужний смартфон з якісною камерою.</p>
+        <p class="price">15 000 грн</p>
+      </article>
+
+      <article class="product">
+        <span class="discount">-10%</span>
+        <h3>Бездротові навушники</h3>
+        <p>Навушники для музики та дзвінків.</p>
+        <p class="price">3 500 грн</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Рекламний банер</h2>
+
+      <div class="banner">
+        <img src="banner.jpg" alt="Акційна пропозиція магазину техніки">
+
+        <button class="banner-button" type="button">
+          Детальніше
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Позиціонування static</h2>
+
+      <div class="static-box">
+        Перший блок
+      </div>
+
+      <div class="static-box static-top">
+        Другий блок
+      </div>
+
+      <div class="static-box">
+        Третій блок
+      </div>
+
+      <p>Другий блок має top: 50px, але його положення не змінюється.</p>
+    </section>
+
+    <section>
+      <h2>Позиціонування relative</h2>
+
+      <div class="relative-box">
+        Цей блок зміщений
+      </div>
+    </section>
+
+    <section>
+      <h2>Накладання двох елементів</h2>
+
+      <div class="layers">
+        <div class="box1">Блок 1</div>
+        <div class="box2">Блок 2</div>
+      </div>
+
+      <p>Після зміни z-index блок 1 розташований поверх блоку 2.</p>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <h2>Контакти</h2>
+    <p>Навчальний магазин Tech Store.</p>
+    <p>Приклад електронної пошти: techstore@example.com</p>
+  </footer>
+
+  <button class="help" type="button">
+    Допомога
+  </button>
+
+</body>
+</html>
