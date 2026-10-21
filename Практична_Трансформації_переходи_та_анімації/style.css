@@ -1,0 +1,130 @@
+/* Загальне оформлення */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222222;
+}
+
+header {
+  padding: 20px;
+  background-color: #244a73;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Поява картки при завантаженні сторінки */
+
+.product-container {
+  width: 300px;
+  margin: 40px auto;
+
+  animation: appear 1s ease-out;
+}
+
+/* Картка товару */
+
+.product {
+  position: relative;
+
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+
+  background-color: white;
+
+  transition: transform 0.3s ease;
+}
+
+/* Підняття, збільшення та невеликий поворот */
+
+.product:hover {
+  transform: translate(0, -10px) scale(1.03) rotate(1deg);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.price {
+  color: #244a73;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Кнопка покупки */
+
+.buy-button {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #244a73;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Плавна зміна кольору та масштабу кнопки */
+
+.buy-button:hover {
+  background-color: #187548;
+  transform: scale(1.08);
+}
+
+/* Позначка акції */
+
+.sale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  background-color: #c62828;
+  color: white;
+  font-weight: bold;
+
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Плавна поява знизу */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Нескінченна пульсація позначки */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
