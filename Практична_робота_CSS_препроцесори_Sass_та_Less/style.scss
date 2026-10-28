@@ -1,0 +1,100 @@
+// Змінні для кольорів, відступів і заокруглення
+$primary-color: #244a73;
+$hover-color: #18334f;
+$page-color: #f2f2f2;
+$card-color: #ffffff;
+$text-color: #222222;
+$spacing: 20px;
+$radius: 10px;
+
+// Міксин із параметрами кольору кнопки та її кольору при наведенні
+@mixin button-style($bg, $hover-bg) {
+  padding: 10px $spacing;
+  border: none;
+  border-radius: $radius;
+  background-color: $bg;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: $hover-bg;
+    transform: scale(1.03);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $page-color;
+  color: $text-color;
+}
+
+header {
+  padding: $spacing;
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $spacing;
+}
+
+// Три колонки на широкому екрані
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing;
+  border: 1px solid gray;
+  border-radius: $radius;
+  background-color: $card-color;
+  transition: transform 0.3s, border-color 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $primary-color;
+  }
+
+  // Вкладені селектори елементів картки
+  h3 {
+    margin: 0 0 $spacing;
+    font-size: 22px;
+  }
+
+  p {
+    margin: 0 0 $spacing;
+    line-height: 1.5;
+  }
+
+  .price {
+    margin-top: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .buy-button {
+    @include button-style($primary-color, $hover-color);
+  }
+}
+
+// Одна колонка на екранах шириною до 600 px включно
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
