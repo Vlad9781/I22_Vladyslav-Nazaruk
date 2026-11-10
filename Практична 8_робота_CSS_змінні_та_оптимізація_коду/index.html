@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Store — каталог товарів</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Для порівняння підключай original.css або style.min.css замість style.css. -->
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-header__title">Tech Store</h1>
+    <p class="site-header__description">Техніка для навчання та відпочинку</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Головне меню">
+    <a class="site-nav__link" href="#catalog">Каталог</a>
+    <a class="site-nav__link" href="#about">Про магазин</a>
+    <a class="site-nav__link" href="#contacts">Контакти</a>
+  </nav>
+
+  <main class="container">
+    <section id="catalog">
+      <h2 class="section-title">Каталог товарів</h2>
+
+      <div class="products">
+        <article class="card product product--featured">
+          <h3 class="product__title">Ноутбук</h3>
+          <p class="product__description">Зручний ноутбук для навчання та роботи.</p>
+          <p class="product__price">25 000 грн</p>
+          <button class="button product__button" type="button">Купити</button>
+        </article>
+
+        <article class="card product">
+          <h3 class="product__title">Смартфон</h3>
+          <p class="product__description">Смартфон із великим екраном та якісною камерою.</p>
+          <p class="product__price">15 000 грн</p>
+          <button class="button product__button" type="button">Купити</button>
+        </article>
+
+        <article class="card product">
+          <h3 class="product__title">Навушники</h3>
+          <p class="product__description">Бездротові навушники для музики та дзвінків.</p>
+          <p class="product__price">3 500 грн</p>
+          <button class="button product__button" type="button">Купити</button>
+        </article>
+
+        <article class="card product">
+          <h3 class="product__title">Планшет</h3>
+          <p class="product__description">Легкий планшет для читання, навчання та відео.</p>
+          <p class="product__price">9 000 грн</p>
+          <button class="button product__button" type="button">Купити</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="card about" id="about">
+      <h2 class="about__title">Про магазин</h2>
+      <p class="about__text">У Tech Store зібрана техніка для навчання, роботи та відпочинку. Обирай пристрій, який підходить саме тобі.</p>
+      <a class="button about__button" href="#catalog">До каталогу</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <p class="site-footer__text">Tech Store — контакти</p>
+    <p class="site-footer__text">Електронна пошта: <a class="site-footer__link" href="mailto:info@techstore.example">info@techstore.example</a></p>
+  </footer>
+
+</body>
+</html>
