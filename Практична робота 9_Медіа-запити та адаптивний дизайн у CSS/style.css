@@ -1,0 +1,236 @@
+/* Базові стилі для комп'ютерів: ширина екрана понад 900 px. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #f2f2f2;
+}
+
+/* Відносна ширина контейнера з обмеженням максимального розміру. */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+  background-color: #244a73;
+  color: white;
+}
+
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.site-header__title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.site-header__description {
+  margin: 0.5rem 0 0;
+}
+
+/* Flexbox для горизонтального меню. */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+  background-color: #18334f;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.section-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+}
+
+/* CSS Grid: три колонки на комп'ютері. */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid #cbd4dd;
+  border-radius: 0.75rem;
+  background-color: white;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+  border-color: #244a73;
+}
+
+/* Зображення змінює ширину та зберігає пропорції. */
+.product__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.product__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.product__description {
+  margin: 0 0 1rem;
+}
+
+.product__price {
+  margin: auto 0 1rem;
+  padding-top: 0.5rem;
+  color: #244a73;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #244a73;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: #18334f;
+  transform: scale(1.02);
+}
+
+.about {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.site-footer__text {
+  margin: 0 0 0.5rem;
+}
+
+.site-footer__link {
+  color: white;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f0a41c;
+  outline-offset: 3px;
+}
+
+/* Планшети: 601–900 px. На менших екранах частину стилів змінить наступний запит. */
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-header__title {
+    font-size: 2rem;
+  }
+
+  .site-header__inner {
+    gap: 1rem;
+  }
+}
+
+/* Смартфони: до 600 px включно. */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1.25rem 0;
+    text-align: center;
+  }
+
+  .site-header__inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-header__title {
+    font-size: 1.75rem;
+  }
+
+  .site-nav {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 1.25rem 0;
+  }
+
+  .section-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product {
+    padding: 1rem;
+  }
+
+  .product__title {
+    font-size: 1.125rem;
+  }
+
+  .about {
+    margin-top: 1.25rem;
+    padding: 1rem;
+  }
+}

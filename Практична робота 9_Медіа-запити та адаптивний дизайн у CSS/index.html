@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Store — адаптивний інтернет-магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <div>
+        <h1 class="site-header__title">Tech Store</h1>
+        <p class="site-header__description">Техніка для навчання та відпочинку</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Головне меню">
+        <a class="site-nav__link" href="#catalog">Каталог</a>
+        <a class="site-nav__link" href="#about">Про магазин</a>
+        <a class="site-nav__link" href="#contacts">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="catalog">
+      <h2 class="section-title">Каталог товарів</h2>
+
+      <div class="products">
+        <article class="product">
+          <img class="product__image" src="images/laptop.svg" width="640" height="400" alt="Відкритий ноутбук із синім екраном">
+          <h3 class="product__title">Ноутбук</h3>
+          <p class="product__description">Для навчання, роботи та щоденних завдань.</p>
+          <p class="product__price">25 000 грн</p>
+          <button class="button" type="button">Купити</button>
+        </article>
+
+        <article class="product">
+          <img class="product__image" src="images/smartphone.svg" width="640" height="400" alt="Смартфон із великим сенсорним екраном">
+          <h3 class="product__title">Смартфон</h3>
+          <p class="product__description">Великий екран та якісна камера для щоденного користування.</p>
+          <p class="product__price">15 000 грн</p>
+          <button class="button" type="button">Купити</button>
+        </article>
+
+        <article class="product">
+          <img class="product__image" src="images/headphones.svg" width="640" height="400" alt="Повнорозмірні бездротові навушники">
+          <h3 class="product__title">Навушники</h3>
+          <p class="product__description">Зручні бездротові навушники для музики та дзвінків.</p>
+          <p class="product__price">3 500 грн</p>
+          <button class="button" type="button">Купити</button>
+        </article>
+
+        <article class="product">
+          <img class="product__image" src="images/tablet.svg" width="640" height="400" alt="Планшет зі стилусом">
+          <h3 class="product__title">Планшет</h3>
+          <p class="product__description">Легкий пристрій для читання, навчання та перегляду відео.</p>
+          <p class="product__price">9 000 грн</p>
+          <button class="button" type="button">Купити</button>
+        </article>
+
+        <article class="product">
+          <img class="product__image" src="images/keyboard.svg" width="640" height="400" alt="Компактна клавіатура зі світлими клавішами">
+          <h3 class="product__title">Клавіатура</h3>
+          <p class="product__description">Компактна клавіатура для комфортного набору тексту.</p>
+          <p class="product__price">1 800 грн</p>
+          <button class="button" type="button">Купити</button>
+        </article>
+
+        <article class="product">
+          <img class="product__image" src="images/mouse.svg" width="640" height="400" alt="Бездротова комп'ютерна миша з коліщатком">
+          <h3 class="product__title">Миша</h3>
+          <p class="product__description">Бездротова миша для точної та зручної роботи.</p>
+          <p class="product__price">900 грн</p>
+          <button class="button" type="button">Купити</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">Про магазин</h2>
+      <p class="about__text">У Tech Store зібрана техніка для навчання, роботи та відпочинку. Обирай пристрій, який підходить саме тобі.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <p class="site-footer__text">Tech Store — контакти</p>
+      <a class="site-footer__link" href="mailto:info@techstore.example">info@techstore.example</a>
+    </div>
+  </footer>
+
+</body>
+</html>

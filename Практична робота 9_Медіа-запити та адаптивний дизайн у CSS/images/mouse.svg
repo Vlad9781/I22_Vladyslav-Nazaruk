@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+<title>Комп’ютерна миша</title>
+<defs>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#91b8df"/>
+    <stop offset="1" stop-color="#244a73"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="400" fill="#edf3f8"/>
+<ellipse cx="320" cy="344" rx="112" ry="14" fill="#d7e2ec"/>
+<rect x="233" y="55" width="174" height="278" rx="85" fill="#18334f"/>
+<path d="M320 66c-43 0-76 33-76 76v106c0 42 34 74 76 74Z" fill="#6d97bd"/>
+<path d="M320 66c43 0 76 33 76 76v106c0 42-34 74-76 74Z" fill="#476f95"/>
+<path d="M244 182h152M320 67v115" fill="none" stroke="#18334f" stroke-width="5"/>
+<rect x="309" y="102" width="22" height="46" rx="11" fill="#18334f"/>
+<path d="M320 112v25" stroke="#bfd4e6" stroke-width="4" stroke-linecap="round"/>
+</svg>

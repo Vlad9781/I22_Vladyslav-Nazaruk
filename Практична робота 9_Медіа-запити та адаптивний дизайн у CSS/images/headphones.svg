@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+<title>Навушники</title>
+<defs>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#91b8df"/>
+    <stop offset="1" stop-color="#244a73"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="400" fill="#edf3f8"/>
+<ellipse cx="320" cy="343" rx="173" ry="14" fill="#d7e2ec"/>
+<path d="M180 230v-36a140 140 0 0 1 280 0v36" fill="none" stroke="#18334f" stroke-width="30" stroke-linecap="round"/>
+<path d="M202 223v-29a118 118 0 0 1 236 0v29" fill="none" stroke="#9fb6ca" stroke-width="14" stroke-linecap="round"/>
+<rect x="150" y="190" width="77" height="137" rx="29" fill="#658aae"/>
+<rect x="164" y="205" width="49" height="108" rx="20" fill="#244a73"/>
+<rect x="413" y="190" width="77" height="137" rx="29" fill="#658aae"/>
+<rect x="427" y="205" width="49" height="108" rx="20" fill="#244a73"/>
+<path d="M178 217v80M441 217v80" stroke="#8eb0ce" stroke-width="4" stroke-linecap="round"/>
+</svg>

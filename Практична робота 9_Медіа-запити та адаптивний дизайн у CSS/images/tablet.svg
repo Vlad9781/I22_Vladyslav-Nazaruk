@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+<title>Планшет</title>
+<defs>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#91b8df"/>
+    <stop offset="1" stop-color="#244a73"/>
+  </linearGradient>
+</defs>
+<rect width="640" height="400" fill="#edf3f8"/>
+<ellipse cx="322" cy="333" rx="222" ry="14" fill="#d7e2ec"/>
+<rect x="111" y="77" width="407" height="245" rx="21" fill="#18334f"/>
+<rect x="130" y="94" width="369" height="211" rx="10" fill="url(#screen)"/>
+<circle cx="120" cy="199" r="3" fill="#90a6ba"/>
+<circle cx="405" cy="156" r="37" fill="#d9e9f6"/>
+<path d="M130 265 249 158 345 259 414 204 499 281v24H130Z" fill="#abc9e3"/>
+<rect x="543" y="91" width="11" height="222" rx="5.5" transform="rotate(12 549 202)" fill="#91a7bb"/>
+<path d="m525 308 9 2-7 16Z" fill="#18334f"/>
+</svg>
